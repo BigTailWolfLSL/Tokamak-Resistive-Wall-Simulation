@@ -1,0 +1,20 @@
+%!TEX root = ../thesis.tex
+%*******************************************************************************
+%*********************************** First Chapter *****************************
+%*******************************************************************************
+
+\chapter{Summary and Future Work} % Title of the First Chapter
+
+\ifpdf
+\graphicspath{{Chapter5/Figs/Raster/}{Chapter5/Figs/PDF/}{Chapter5/Figs/}}
+\else
+\graphicspath{{Chapter5/Figs/Vector/}{Chapter5/Figs/}}
+\fi
+
+\label{chapter 5}
+
+This thesis presented a comprehensive overview of the theoretical foundations and numerical techniques required for simulating ideal magnetohydrodynamic (MHD) phenomena in tokamak devices. The primary objective was to introduce the methodologies and validate their effectiveness through a series of computational experiments.
+
+In Chapter 1, we discussed the significance of nuclear fusion and the critical role of controlled fusion processes, particularly within tokamak reactors. We emphasized the need for precise computational models to aid in the design and optimization of these fusion devices. Chapter 2 delved into the theoretical background, covering the essential ideal MHD equations, various divergence cleaning methods, and the boundary conditions necessary for accurate plasma simulations in tokamaks. We also explored the numerical strategies for handling complex geometries and maintaining the stability of the magnetic field. Chapter 3 outlined the numerical schemes implemented in this study, such as the MHD-HLLC solver and the MUSCL-Hancock method, to achieve second-order accuracy. We described the application of a mixed hyperbolic/parabolic GLM divergence cleaning method to ensure a divergence-free magnetic field. Additionally, we detailed the use of the level set method and reflective boundary conditions for defining and managing rigid body boundaries. Chapter 4 validated the proposed methods through several benchmark tests. The Orszag-Tang test was employed to verify the accuracy of the MHD solver and divergence cleaning techniques, showing good alignment with established results. The shock diffraction tests over wedges and cylinders assessed the handling of rigid body geometries, while the rotated Sod and Brio-Wu tests validated the boundary conditions for both fixed and rotating rigid bodies. These tests confirmed the robustness and reliability of the implemented numerical methods.
+
+While the current study has successfully introduced and validated the theoretical and numerical foundations for ideal MHD simulations within rigid bodies geometries, we are apply these onto more complex cases. We conduct these tests under a perfect conducting wall boundary condition. We may try to extend our results into a resistive wall conditions.
