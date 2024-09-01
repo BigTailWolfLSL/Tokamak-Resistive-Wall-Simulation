@@ -1,0 +1,43 @@
+double x = x0 + (i + 0.5-NUM_GROW) * dx;
+            double y = y0 + (j + 0.5-NUM_GROW) * dy;
+
+            double miu=0.8825;
+            double sigma=0.25;
+
+            double m=2.0;
+            double n=1.0;
+            double R=10.0;
+            double B0=1.0;
+            double mu0=4.0*M_PI*1e-7;
+            double q0=1.1;
+
+            double J0 = 2.0*B0/(R*mu0*q0);
+            double J0_comp = J0 * sqrt(mu0/1e5);
+            double constant1=0.055;
+
+            double theta=atan2(y,x);
+            double r=sqrt((x-0.0)*(x-0.0)+(y-0.0)*(y-0.0));
+            double Btheta=0.36011444914639353221599919301809*(r<=0.8825?0.2564497898*r:0.1997246991/r);
+
+            u[i][j].rho = (4.95e-1*tanh(20.0*(-r+0.8825))+5.05e-1);
+            u[i][j].momentum_x=u[i][j].rho*10*exp(-(r-miu)*(r-miu)/sigma/sigma);
+            u[i][j].momentum_y=u[i][j].rho*10*exp(-(r-miu)*(r-miu)/sigma/sigma);
+            u[i][j].momentum_z = 0;
+            u[i][j].pressure = (4.5e-1*tanh(20.0*(-r+0.8825))+5.5e-1);
+//            u[i][j].pressure =(r<=0.8825?(-0.25*J0_comp*J0_comp*r*r + constant1):(-0.25*J0_comp*J0_comp*0.8825*0.8825 + constant1));//TODO:过不了threshold
+            u[i][j].B_x=-Btheta*y/r;
+            u[i][j].B_y=Btheta*x/r;
+            u[i][j].B_z=B0;
+            u[i][j].energy =u[i][j].pressure/(C_gamma-1.0)
+                             +0.5*(u[i][j].momentum_x*u[i][j].momentum_x+u[i][j].momentum_y*u[i][j].momentum_y+u[i][j].momentum_z*u[i][j].momentum_z)/u[i][j].rho
+                             +0.5*(u[i][j].B_x*u[i][j].B_x+u[i][j].B_y*u[i][j].B_y+u[i][j].B_z*u[i][j].B_z);
+
+            uRigidBody[i][j].rho=3;
+            uRigidBody[i][j].momentum_x = 0;
+            uRigidBody[i][j].momentum_y = 0;
+            uRigidBody[i][j].momentum_z = 0;
+            uRigidBody[i][j].pressure = 0;
+            uRigidBody[i][j].B_x=-Btheta*y/r;
+            uRigidBody[i][j].B_y=Btheta*x/r;
+            uRigidBody[i][j].B_z=B0;
+            uRigidBody[i][j].energy =0;
