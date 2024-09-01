@@ -1,0 +1,3 @@
+/mnt/c/C++files/rigidBody_wedge/cmake-build-debug/CMakeFiles/rigidBody.dir
+/mnt/c/C++files/rigidBody_wedge/cmake-build-debug/CMakeFiles/edit_cache.dir
+/mnt/c/C++files/rigidBody_wedge/cmake-build-debug/CMakeFiles/rebuild_cache.dir
