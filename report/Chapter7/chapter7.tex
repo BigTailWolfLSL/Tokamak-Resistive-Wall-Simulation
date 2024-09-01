@@ -1,0 +1,78 @@
+%!TEX root = ../thesis.tex
+%*******************************************************************************
+%*********************************** First Chapter *****************************
+%*******************************************************************************
+
+\chapter{Theory} 
+
+\ifpdf
+\graphicspath{{Chapter7/Figs/Raster/}{Chapter7/Figs/PDF/}{Chapter7/Figs/}}
+\else
+\graphicspath{{Chapter7/Figs/Vector/}{Chapter7/Figs/}}
+\fi
+
+\label{chapter 7}
+
+
+In the report 1, we discussed the fundamental aspects of the ideal Magnetohydrodynamics (MHD) model used to describe plasma behavior in tokamaks. The ideal MHD framework, characterized by the absence of resistivity and viscosity, provides a simplified yet reasonable model for understanding the core plasma in tokamak. The key solvers of this model, including the MHD-HLLC solver and the MUSCL-Hancock method, were validated through a series of tests in Report 1. A mixed hyperbolic/parabolic Generalized Lagrange Multiplier (GLM) divergence cleaning method is used to maintain the divergence-free nature of the magnetic field. We validate these in the report 1. These methods and techniques are still going to be applied in report 2. In this chapter, we focus our attention on the mathematical theory towards a resistive wall condition.
+
+\section{Resistive Wall Equation}
+\label{section7.1}
+In section \ref{section2.3}, we discuss some of the necessary mathematical requirements for perfect conducting or insulating wall conditions. More specifically, we expressed a perfect conducting or insulating wall in terms of Dirichlet or Neumann boundary conditions for the magnetic field. However, the resistive wall condition is too complicated to be described as Neumann or Dirichlet conditions. Instead, the equations governing the magnetic field on fixed rigid body are Faraday's Law:
+$$
+\frac{\partial \mathbf{B}}{\partial t} + \nabla \times \mathbf{E} = 0 ,
+$$ 
+Ampere's Law:
+$$
+\frac{1}{c^2}\frac{\partial \mathbf{E}}{\partial t} + \mu_0 \mathbf{J} - \nabla \times \mathbf{B} = 0  
+$$
+and Ohm's Law:
+$$
+\eta \mathbf{J} = \mathbf{E} + \mathbf{v} \times \mathbf{B} .
+$$
+
+The change in the electric field is much slower than speed of light. $\frac{1}{c^2}\frac{\partial \mathbf{E}}{\partial t}$ can be regarded as small term and be ignored. For a fixed rigid body, $\mathbf{v}=0$. These equations give the magnetic diffusion on rigid body
+\begin{equation}
+	\frac{\partial \mathbf{B}}{\partial t}+\eta_{w}\nabla\times\nabla\times\mathbf{B}=0
+	\label{equ:magneticDiffusion}
+\end{equation} 
+where $\eta_w$ is the resistivity on wall. Since the identity $\nabla\times\nabla\times\mathbf{B}=\nabla(\nabla\cdot\mathbf{B})-\nabla^2\mathbf{B}$ and  $\nabla\cdot\mathbf{B}=0$, this equation can be further rearranged as 
+\begin{equation}
+	\eta_{w}\nabla^2\mathbf{B}=\frac{\partial \mathbf{B}}{\partial t}
+	\label{equ:magneticDiffusion_rearrange}
+\end{equation} 
+\section{Stiffness Problem from Diffusion}
+We deduced the magnetic diffusion equation \ref{equ:magneticDiffusion} on rigid body. This equation might have a different stable time step compared with the numerical scheme used for the plasma, leading to the occurence of a stiffness problem.
+
+Generally, the stiffness problem arises in numerical simulations when some terms act on much shorter time scales for compared to the rest of the system \cite{wright2020resistive}. To be more specific, some terms may lead to much smaller time steps compared with the rest of the numerical equation to guarantee numerical stability \cite{spijker1996stiffness}. In our case, the magnetic diffusion equation \ref{equ:magneticDiffusion} on rigid body may need to evolve in a much shorter time step than that in plasma. That is how it forms a stiffness problem under the resistive wall condition. In order to maintain numerical stability and effectiveness, addressing the stiffness in the problem may necessitate the use of very small time steps in an explicit method, or alternatively, employing an implicit method. However, this can lead to high computational costs and prolonged computation times, potentially rendering large-scale simulations impractical \cite{spijker1996stiffness,wright2020resistive}. Similar stiffness problem also occur in resistive MHD model \cite{wright2020resistive}, chemical kinetics, control systems and any system with processes occurring at vastly different rates \cite{spijker1996stiffness}.     
+
+\subsection{Evaluating Stiffness}
+\label{section7.2.1}
+To quantitatively determine the stiffness of a set of numerical equations, particularly differential equations, we need to assess the properties that contribute to stiffness. It has proven difficult to formulate a precise definition of stiffness, but some studies proposed ways to quantitatively evaluate stiffness. Spijker \cite{spijker1996stiffness} use Lipschitz constant, upper bound of absolute value of gradient locally in time and space, to evaluate the stiffness. Thohura \textit{et al.} \cite{thohura2013numerical} use the largest negative eigenvalue of Jacobian matrix of the numerical equation while Chu \textit{et al.} \cite{chu1996evolutionary} just do a sensitivity analysis. 
+
+To some extent, the resistivity that causes magnetic diffusion in a rigid body is quite similar to the resistivity in resistive MHD plasma, except that on the fixed rigid body, there is no velocity. Under most of the definitions above, both of their model stiffness is proportional to resistivities \cite{wright2020resistive}. That is $\textit{stiffness}\propto \eta$. In chapter \ref{chapter 7}, we discussed the materials use in tokamaks devices. Beryllium, graphite, and tungsten are used in first wall and stainless steel is used on vacuum vessel wall. The resistivities for beryllium and tungsten are $4.0 \times 10^{-8} \, \Omega \cdot \text{m}$, $5.6 \times 10^{-8} \, \Omega \cdot \text{m}$. The highly ordered pyrolytic graphite used on tokamaks has lower resistivity than normal graphite, with a resistivity less than or equal to $1 \times 10^{-6} \, \Omega \cdot \text{m}$. That on stainless steel is around  $7 \times 10^{-7} \, \Omega \cdot \text{m}$. Thus, the rigid body resistivity in equation \ref{equ:magneticDiffusion} should have $\eta_w\leq1 \times 10^{-6} \, \Omega \cdot \text{m}$, which implies that our numerical methods need to be capable of handling this range of resistivity values effectively.
+
+\subsection{Approaches for Stiffness}
+In numerical simulations, stiffness problems often necessitate specialized approaches to ensure stability and efficiency. Two of the most common strategies are adaptive time stepping and implicit methods. Adaptive time stepping involves adjusting the time step size dynamically to accommodate the varying scales of the problem, which helps to maintain stability without overly restricting the step size. On the other hand, implicit methods are particularly effective for stiff problems as they allow for larger time steps while maintaining stability, albeit at the cost of increased computational complexity. Both approaches are crucial in managing the challenges posed by stiffness in simulations.
+\subsubsection*{Adaptive Time Step and Subcycling}
+Solving these stiffness problems can be equivalent to numerically solving stiff ordinary differential equations (ODEs). The most straightforward approach is adaptive strategies. Spatially, adaptive mesh refinements are often used to reduce mesh stiffness in areas of interest, with mesh stiffness serving as a criterion for refinement. Offermans \textit{et al.} \cite{offermans2020adaptive} note that p-refinement may lead to local mesh stiffness outside the target area. Temporally, adaptive techniques are commonly applied to solve ODEs. For instance, adaptive stepsize control in Runge-Kutta methods helps avoid the limitations of fixed stepsizes, which can introduce significant round-off errors in Thohura and Rahman \cite{thohura2010comparison}. Similar techniques have been shown to improve efficiency and accuracy in solving stiff initial value problems in Jannelli and Fazio \cite{jannelli2006adaptive}. Subcycling is another direct adaptive method; LeVeque and Yee \cite{LeVeque1998} split the problem into conservation laws and stiff source systems, applying an ODE solver over subdivided time intervals to handle the stiff source term. Kershaw \cite{kershaw1981differencing} also employs subcycling to address diffusion in hydrodynamics. These methods, adaptive stepsize control and subcycling, are flexible, efficient, and accurate across different scales by focusing on local stiffness and controlling round-off error within acceptable limits.
+
+\subsubsection*{Implicit Methods}
+Many methods have been developed to tackle stiffness in differential equations, with implicit methods being particularly effective. Implicit methods have a natural advantage in dealing with stiffness problems as they often have A-stability remaining stable with large step size or L-stability ensuring not accumulating errors over time \cite{alamri2022very}. These situations are called unconditional stable. For instance, the Backward Euler Method, as employed by Liu \textit{et al.} \cite{liu2012efficient}, efficiently solves nonlinear dynamic problems in structural engineering, offering unconditional stability for stiff systems. Similar to Backward Euler, Rosenbrock methods is also a implicit single-step method that effectively address stiff ODEs \cite{shampine1982implementation}.
+
+Intermediate-step methods have better accuracy, such as implicit Runge-Kutta (IRK), specially including Gauss-Legendre method, Radau method and Lobatto method. Implicit Runga-Kutta methods are particularly effective in handling stiffness in differential equations with A-stability and L-stability \cite{alamri2022very,franco1997two}. Franco and Gomez \cite{franco1997two} demonstrate the effectiveness of IRK methods in solving stiff equations due to their unconditional stability.
+
+Implicit trapezoidal method is based on the trapezoidal rule for integration known as the simplest multistep method. It averages the function's values at the current and next time steps. Crank-Nicolson method, as special application of these methods, averages function values over time steps as shown by Jorgenson \cite{jorgenson1unconditional}. 
+ 
+Some advanced multistep methods can also be used on dealing with stiff problem. The Adams-Bashforth methods \cite{jorgenson1unconditional} are typical multistep methods. However, they are explicit and not very good at solving stiff equations. Instead, Adams-Moulton methods are implicit and better to solve stiff equations. Among all multistep method, Backward Differentiation Formulas (BDF) are the most famous for their good performance on solving stiff ODE. BDF are implicit and multistep. All of them are A-stable but only some of them are L-stable. They are introduced by Curtiss and Hirschfelder in 1952 \cite{curtiss1952integration} to especially address stiffness in equations. They are the most powerful methods on stiffness problem. 
+
+Although implicit methods are naturally good at solving stiff equations as they have bigger stable time step, they require the solution of large systems of nonlinear equations, often acquired by iterative techniques and matrix operations. A Jacobian matrix needs to be solved during the iteration. This complexity increases rapidly as the problem scale increase. 
+
+\subsubsection*{Addressing Our Stiffness Problem}
+In our case, there are several advantages that we must consider. The stiffness problem primarily occurs on the resistive wall. The resistive wall condition, as a boundary condition, is inherently separate from the core ideal MHD model that we evolve. Additionally, the stiffness associated with the resistive wall condition mainly stems from $\eta_w$ in magnetic diffusion equation \ref{equ:magneticDiffusion}, where $\textit{stiffness}\propto \eta_w$. As discussed in the end of section \ref{section7.2.1}, $\eta_w$ is small under a tokamak scenario. Given these, it is not justified to bear the high computational cost of using any implicit method. Therefore, the solution to addressing the stiffness here is clear. We should follow the approach outlined by LeVeque and Yee \cite{leveque1990study}. We separate the condition on the rigid body and update the magnetic diffusion with subdivided subcycles. Practically, we build up a state of rigid body. We evolve the states on the plasma and the rigid body alternately as if the ghost fluid method is applied. This approach allows us to manage the stiffness without incurring high computational costs. Specifically, the subcycling time step on the rigid body follow the CFL condition based on Von Neumann stability analysis on magnetic diffusion with reference to Dumbser \textit{et al.} \cite{dumbser2019divergence}. we use the following as our stable time step for the stiff ODE. This is used as a guide for the number of subcycling steps we take in our split approach.  
+$$
+\Delta t=CFL\frac{1}{2{{\eta }_{w}}\left( \frac{1}{\Delta {{x}^{2}}}+\frac{1}{\Delta {{y}^{2}}} \right)}
+$$  
+
+\section{Boundary Condition for Divergence Cleaning}
+In chapter \ref{chapter 3}, we discussed the mixed divergence cleaning we use. When simulating with the involvement of rigid bodies, divergence cleaning becomes very important. Divergence cleaning can address the divergence errors introduced by plasma-wall interactions. While divergence-free conditions may be maintained within the plasma or rigid body, interactions between plasma and the wall can easily create a non-zero divergence, violating the divergence-free condition. Therefore, when a rigid body is present, it is crucial to choose suitable boundary conditions for the divergence cleaning potential. $\psi$ is the potential representing non-zero magnetic divergence and is used to reduce divergence errors. The mixed divergence cleaning approach employs hyperbolic and parabolic terms to dissipate and dampen $\psi$. We aim to avoid the spread of divergence across the boundary during cleaning. Consequently, we apply Neumann boundary conditions, specifically transmissive conditions, to ensure that $\psi$ remains consistent across the boundary, eliminating any corrections between them.
