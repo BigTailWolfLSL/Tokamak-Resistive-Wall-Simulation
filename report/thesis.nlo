@@ -1,0 +1,5 @@
+\nomenclatureentry{z-MHDMHD@[{MHD}]\begingroup Magnetohydrodynamics\nomeqref {1.0}|nompageref}{7}
+\nomenclatureentry{z-MCFMCF@[{MCF}]\begingroup Magnetic Confinement Fusion\nomeqref {1.0}|nompageref}{7}
+\nomenclatureentry{z-ICFICF@[{ICF}]\begingroup Inertial Confinement Fusion\nomeqref {1.0}|nompageref}{7}
+\nomenclatureentry{z-MTFMTF@[{MTF}]\begingroup Magnetized Target Fusion\nomeqref {1.0}|nompageref}{7}
+\nomenclatureentry{z-MHD-HLLCMHD-HLLC@[{MHD-HLLC}]\begingroup A MHD solver proposed by \cite{li2005hllc}\nomeqref {1.0}|nompageref}{7}

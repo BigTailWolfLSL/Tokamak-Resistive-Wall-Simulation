@@ -1,0 +1,522 @@
+\begin{thebibliography}{}
+
+\bibitem[Abdou et~al., 2015]{abdou2015blanket}
+Abdou, M., Morley, N.~B., Smolentsev, S., Ying, A., Malang, S., Rowcliffe, A.,
+  and Ulrickson, M. (2015).
+\newblock Blanket/first wall challenges and required r\&d on the pathway to
+  demo.
+\newblock {\em Fusion Engineering and Design}, 100:2--43.
+
+\bibitem[Alamri and Ketcheson, 2022]{alamri2022very}
+Alamri, Y. and Ketcheson, D.~I. (2022).
+\newblock Very high-order a-stable stiffly accurate diagonally implicit
+  runge-kutta methods.
+
+\bibitem[Andrew, 2000]{andrew2000level}
+Andrew, A.~M. (2000).
+\newblock Level set methods and fast marching methods: Evolving interfaces in
+  computational geometry, fluid mechanics, computer vision, and materials
+  science, by ja sethian, cambridge university press, cambridge, uk, 2nd edn.
+  1999 (first published 1996 as level set methods) xviii+ 420 pp., isbn
+  (paperback) 0-521-64557-3,(hardback) 0-521-64204-3 (pbk,{\pounds} 18.95).
+\newblock {\em Robotica}, 18(1):89--92.
+
+\bibitem[Arendt and Warma, 2004]{arendt2004dirichlet}
+Arendt, W. and Warma, M. (2004).
+\newblock Dirichlet and neumann boundary conditions: What is in between?
+\newblock {\em Nonlinear Evolution Equations and Related Topics: Dedicated to
+  Philippe B{\'e}nilan}, pages 119--135.
+
+\bibitem[Becerra, 2016]{becerra2016resistive}
+Becerra, A.~L. (2016).
+\newblock {\em Resistive wall and error field studies using the extended MHD
+  code NIMROD}.
+\newblock PhD thesis, University of Wisconsin--Madison.
+
+\bibitem[Bondeson et~al., 2003]{bondeson2003physics}
+Bondeson, A., Liu, Y., Gregoratto, D., Fransson, C.-M., and Gribov, Y. (2003).
+\newblock Physics and stabilization of resistive wall modes in tokamaks.
+\newblock {\em Plasma physics and controlled fusion}, 45(12A):A253.
+
+\bibitem[Bondeson and Ward, 1994]{bondeson1994stabilization}
+Bondeson, A. and Ward, D. (1994).
+\newblock Stabilization of external modes in tokamaks by resistive walls and
+  plasma rotation.
+\newblock {\em Physical Review Letters}, 72(17):2709.
+
+\bibitem[Brio and Wu, 1988]{brio1988upwind}
+Brio, M. and Wu, C.~C. (1988).
+\newblock An upwind differencing scheme for the equations of ideal
+  magnetohydrodynamics.
+\newblock {\em Journal of computational physics}, 75(2):400--422.
+
+\bibitem[Bryson and Gross, 1961]{bryson1961diffraction}
+Bryson, A. and Gross, R. (1961).
+\newblock Diffraction of strong shocks by cones, cylinders, and spheres.
+\newblock {\em Journal of Fluid Mechanics}, 10(1):1--16.
+
+\bibitem[Cerniauskaite et~al., 2011]{cerniauskaite2011systematic}
+Cerniauskaite, M., Quintas, R., Boldt, C., Raggi, A., Cieza, A., Bickenbach,
+  J.~E., and Leonardi, M. (2011).
+\newblock Systematic literature review on icf from 2001 to 2009: its use,
+  implementation and operationalisation.
+\newblock {\em Disability and rehabilitation}, 33(4):281--309.
+
+\bibitem[Cheong et~al., 2022]{cheong2022extension}
+Cheong, P. C.-K., Pong, D. Y.~T., Yip, A. K.~L., and Li, T. G.~F. (2022).
+\newblock An extension of gmunu: general-relativistic resistive
+  magnetohydrodynamics based on staggered-meshed constrained transport with
+  elliptic cleaning.
+\newblock {\em The Astrophysical Journal Supplement Series}, 261(2):22.
+
+\bibitem[{Chinese Academy of Sciences}, 2021]{CAS2021}
+{Chinese Academy of Sciences} (2021).
+\newblock Controlled fusion: the bridge to future.
+\newblock
+  \url{https://www.cas.cn/zt/kjzt/sswcj/mt/202111/t20211126_4815985.shtml}.
+\newblock Accessed: 2024-05-31.
+
+\bibitem[Chrysanthou, 2020]{chrysanthou2020}
+Chrysanthou, M. (2020).
+\newblock Integrated resistive wall simulations.
+\newblock Master's thesis, University of Cambridge.
+
+\bibitem[Chu et~al., 1996]{chu1996evolutionary}
+Chu, D.~N., Xie, Y., Hira, A., and Steven, G. (1996).
+\newblock Evolutionary structural optimization for problems with stiffness
+  constraints.
+\newblock {\em Finite elements in analysis and design}, 21(4):239--251.
+
+\bibitem[Clauser and Jardin, 2021]{clauser2021iter}
+Clauser, C. and Jardin, S. (2021).
+\newblock Iter cold vdes in the limit of perfectly conducting walls.
+\newblock {\em Physics of Plasmas}, 28(1).
+
+\bibitem[Curtiss and Hirschfelder, 1952]{curtiss1952integration}
+Curtiss, C.~F. and Hirschfelder, J.~O. (1952).
+\newblock Integration of stiff equations.
+\newblock {\em Proceedings of the national academy of sciences},
+  38(3):235--243.
+
+\bibitem[De~Vries et~al., 2011]{de2011survey}
+De~Vries, P., Johnson, M., Alper, B., Buratti, P., Hender, T., Koslowski, H.,
+  Riccardo, V., Contributors, J.-E., et~al. (2011).
+\newblock Survey of disruption causes at jet.
+\newblock {\em Nuclear fusion}, 51(5):053018.
+
+\bibitem[Dedner et~al., 2002]{dedner2002hyperbolic}
+Dedner, A., Kemm, F., Kr{\"o}ner, D., Munz, C.-D., Schnitzer, T., and
+  Wesenberg, M. (2002).
+\newblock Hyperbolic divergence cleaning for the mhd equations.
+\newblock {\em Journal of Computational Physics}, 175(2):645--673.
+
+\bibitem[Dellar, 2022]{dellar2022hyperbolic}
+Dellar, P. (2022).
+\newblock Hyperbolic divergence cleaning in lattice boltzmann
+  magnetohydrodynamics.
+\newblock {\em Communications in Computational Physics}.
+
+\bibitem[Ding et~al., 2024]{ding2024high}
+Ding, S., Garofalo, A., Wang, H., Weisberg, D., Li, Z., Jian, X., Eldon, D.,
+  Victor, B., Marinoni, A., Hu, Q., et~al. (2024).
+\newblock A high-density and high-confinement tokamak plasma regime for fusion
+  energy.
+\newblock {\em Nature}, pages 1--6.
+
+\bibitem[Doshi et~al., 2011]{doshi2011iter}
+Doshi, B., Zhou, C., Ioki, K., Xie, H., Gupta, G., Bhardwaj, A., Terasawa, A.,
+  et~al. (2011).
+\newblock Iter cryostat—an overview and design progress.
+\newblock {\em Fusion Engineering and Design}, 86(9-11):1924--1927.
+
+\bibitem[Dumbser et~al., 2019]{dumbser2019divergence}
+Dumbser, M., Balsara, D.~S., Tavelli, M., and Fambri, F. (2019).
+\newblock A divergence-free semi-implicit finite volume scheme for ideal,
+  viscous, and resistive magnetohydrodynamics.
+\newblock {\em International Journal for Numerical Methods in Fluids},
+  89(1-2):16--42.
+
+\bibitem[Federici et~al., 2016]{federici2016overview}
+Federici, G., Bachmann, C., Biel, W., Boccaccini, L., Cismondi, F., Ciattaglia,
+  S., Coleman, M., Day, C., Diegele, E., Franke, T., et~al. (2016).
+\newblock Overview of the design approach and prioritization of r\&d activities
+  towards an eu demo.
+\newblock {\em Fusion Engineering and Design}, 109:1464--1474.
+
+\bibitem[Federici et~al., 2001]{federici2001plasma}
+Federici, G., Skinner, C.~H., Brooks, J.~N., Coad, J.~P., Grisolia, C., Haasz,
+  A.~A., Hassanein, A., Philipps, V., Pitcher, C.~S., Roth, J., et~al. (2001).
+\newblock Plasma-material interactions in current tokamaks and their
+  implications for next step fusion reactors.
+\newblock {\em Nuclear Fusion}, 41(12):1967.
+
+\bibitem[Ferraro et~al., 2016]{ferraro2016multi}
+Ferraro, N., Jardin, S., Lao, L., Shephard, M., and Zhang, F. (2016).
+\newblock Multi-region approach to free-boundary three-dimensional tokamak
+  equilibria and resistive wall instabilities.
+\newblock {\em Physics of Plasmas}, 23(5).
+
+\bibitem[Franco and Gomez, 1997]{franco1997two}
+Franco, J. and Gomez, I. (1997).
+\newblock Two three-parallel and three-processor sdirk methods for stiff
+  initial-value problems.
+\newblock {\em Journal of computational and applied mathematics},
+  87(1):119--134.
+
+\bibitem[Freidberg, 2014]{freidberg2014ideal}
+Freidberg, J.~P. (2014).
+\newblock {\em ideal MHD}.
+\newblock Cambridge University Press.
+
+\bibitem[Ghatak and Das, 2007]{ghatak2007kink}
+Ghatak, A. and Das, A.~L. (2007).
+\newblock Kink instability of a highly deformable elastic cylinder.
+\newblock {\em Physical review letters}, 99(7):076101.
+
+\bibitem[Glaz et~al., 1985]{Glaz1985}
+Glaz, H.~M., Colella, P., Glass, I.~I., and Deschambault, R.~L. (1985).
+\newblock A numerical study of oblique shock-wave reflections with experimental
+  comparisons.
+\newblock {\em Proceedings of the Royal Society of London. A. Mathematical and
+  Physical Sciences}, 398(1814):117--140.
+
+\bibitem[Gong, 2024]{gong2024overview}
+Gong, X. (2024).
+\newblock Overview of recent experimental results on the east tokamak.
+\newblock {\em Nuclear Fusion}.
+
+\bibitem[Haines, 1977]{haines1977plasma}
+Haines, M. (1977).
+\newblock Plasma containment in cusp-shaped magnetic fields.
+\newblock {\em Nuclear Fusion}, 17(4):811.
+
+\bibitem[Haney and Freidberg, 1989]{haney1989variational}
+Haney, S.~W. and Freidberg, J.~P. (1989).
+\newblock Variational methods for studying tokamak stability in the presence of
+  a resistive wall.
+
+\bibitem[Harten et~al., 1983]{harten1983upstream}
+Harten, A., Lax, P.~D., and Leer, B.~v. (1983).
+\newblock On upstream differencing and godunov-type schemes for hyperbolic
+  conservation laws.
+\newblock {\em SIAM review}, 25(1):35--61.
+
+\bibitem[Hender et~al., 1989]{hender1989effects}
+Hender, T., Gimblett, C., and Robinson, D. (1989).
+\newblock Effects of a resistive wall on magnetohydrodynamic instabilities.
+\newblock {\em Nuclear fusion}, 29(8):1279.
+
+\bibitem[Hern{\'a}ndez et~al., 2018]{hernandez2018explicit}
+Hern{\'a}ndez, A.~M., Stewart, D.~S., and Lieberthal, B. (2018).
+\newblock An explicit algorithm for imbedding solid boundaries in cartesian
+  grids for the reactive euler equations.
+\newblock {\em Combustion Theory and Modelling}, 22(4):714--743.
+
+\bibitem[Hillier, 1995]{Hillier1995}
+Hillier, R. (1995).
+\newblock Numerical modelling of shock wave diffraction.
+\newblock In {\em Shock Waves @ Marseille IV: Shock Structure and Kinematics,
+  Blast Waves and Detonations}, pages 17--26. Springer.
+
+\bibitem[{ITER Organization}, 2024]{iter_website}
+{ITER Organization} (2024).
+\newblock Iter - the way to new energy.
+\newblock \url{https://www.iter.org}.
+\newblock Accessed: 2024-07-29.
+
+\bibitem[Janhunen, 2000]{janhunen2000positive}
+Janhunen, P. (2000).
+\newblock A positive conservative method for magnetohydrodynamics based on hll
+  and roe methods.
+\newblock {\em Journal of Computational Physics}, 160(2):649--661.
+
+\bibitem[Jannelli and Fazio, 2006]{jannelli2006adaptive}
+Jannelli, A. and Fazio, R. (2006).
+\newblock Adaptive stiff solvers at low accuracy and complexity.
+\newblock {\em Journal of Computational and Applied Mathematics},
+  191(2):246--258.
+
+\bibitem[Jorgenson, 2014]{jorgenson1unconditional}
+Jorgenson, A. (2014).
+\newblock Unconditional stability of a crank-nicolson adamsbashforth 2
+  implicit-explicit numerical method.
+\newblock {\em A (A-C)}, 1(2):1.
+
+\bibitem[Ju and Wang, 2023]{ju2023incompressible}
+Ju, Q. and Wang, J. (2023).
+\newblock Incompressible limit of ideal magnetohydrodynamic equations with a
+  perfectly conducting wall condition.
+\newblock {\em SIAM Journal on Mathematical Analysis}, 55(6):7549--7574.
+
+\bibitem[Kershaw, 1981]{kershaw1981differencing}
+Kershaw, D.~S. (1981).
+\newblock Differencing of the diffusion equation in lagrangian hydrodynamic
+  codes.
+\newblock {\em Journal of Computational Physics}, 39(2):375--395.
+
+\bibitem[Kirkpatrick and Lindemuth, 1997]{kirkpatrick1997magnetized}
+Kirkpatrick, R.~C. and Lindemuth, I.~R. (1997).
+\newblock Magnetized target fusion: An overview of the concept.
+\newblock {\em Current trends in international fusion research}, pages
+  319--332.
+
+\bibitem[Kittel and McEuen, 2018]{kittel2018introduction}
+Kittel, C. and McEuen, P. (2018).
+\newblock {\em Introduction to solid state physics}.
+\newblock John Wiley \& Sons.
+
+\bibitem[Kumar, 2021]{kumar2021analysis}
+Kumar, N. (2021).
+\newblock {\em Analysis of turbulent transport in the central part of
+  high-confinement tokamak plasmas}.
+\newblock PhD thesis, Aix-Marseille.
+
+\bibitem[LeVeque, 1998]{LeVeque1998}
+LeVeque, R.~J. (1998).
+\newblock {\em Nonlinear conservation laws and finite volume methods}, pages
+  1--159.
+\newblock Springer.
+
+\bibitem[LeVeque and Yee, 1990]{leveque1990study}
+LeVeque, R.~J. and Yee, H.~C. (1990).
+\newblock A study of numerical methods for hyperbolic conservation laws with
+  stiff source terms.
+\newblock {\em Journal of computational physics}, 86(1):187--210.
+
+\bibitem[Li and Wan, 2021]{li2021experimental}
+Li, J. and Wan, Y. (2021).
+\newblock The experimental advanced superconducting tokamak.
+\newblock {\em Engineering}, 7(11):1523--1528.
+
+\bibitem[Li and Sun, 2019]{li2019weno}
+Li, Q. and Sun, D. (2019).
+\newblock Weno interpolation-based and upwind-biased schemes with free-stream
+  preservation.
+
+\bibitem[Li, 2005]{li2005hllc}
+Li, S. (2005).
+\newblock An hllc riemann solver for magneto-hydrodynamics.
+\newblock {\em Journal of computational physics}, 203(1):344--357.
+
+\bibitem[Liu et~al., 2012]{liu2012efficient}
+Liu, T., Zhao, C., Li, Q., and Zhang, L. (2012).
+\newblock An efficient backward euler time-integration method for nonlinear
+  dynamic analysis of structures.
+\newblock {\em Computers \& structures}, 106:20--28.
+
+\bibitem[Londrillo and Del~Zanna, 2004]{londrillo2004divergence}
+Londrillo, P. and Del~Zanna, L. (2004).
+\newblock On the divergence-free condition in godunov-type schemes for ideal
+  magnetohydrodynamics: the upwind constrained transport method.
+\newblock {\em Journal of Computational Physics}, 195(1):17--48.
+
+\bibitem[Mahadevia et~al., 2014]{mahadevia2014bicuspid}
+Mahadevia, R., Barker, A.~J., Schnell, S., Entezari, P., Kansal, P., Fedak,
+  P.~W., Malaisrie, S.~C., McCarthy, P., Collins, J., Carr, J., et~al. (2014).
+\newblock Bicuspid aortic cusp fusion morphology alters aortic
+  three-dimensional outflow patterns, wall shear stress, and expression of
+  aortopathy.
+\newblock {\em Circulation}, 129(6):673--682.
+
+\bibitem[Miki et~al., 2007]{miki2007large}
+Miki, K., Schulz, J., and Menon, S. (2007).
+\newblock Large eddy simulation of a supersonic plasma flow over a backward
+  facing step.
+\newblock In {\em Fifth International Symposium on Turbulence and Shear Flow
+  Phenomena}. Begel House Inc.
+
+\bibitem[Moynihan and Bortz, 2023]{moynihan2023fusion}
+Moynihan, M. and Bortz, A.~B. (2023).
+\newblock {\em Fusion's Promise: How Technological Breakthroughs in Nuclear
+  Fusion Can Conquer Climate Change on Earth (And Carry Humans To Mars, Too)}.
+\newblock Springer.
+
+\bibitem[Neilsen et~al., 2006]{neilsen2006relativistic}
+Neilsen, D., Hirschmann, E.~W., and Millward, R.~S. (2006).
+\newblock Relativistic mhd and excision: formulation and initial tests.
+\newblock {\em Classical and Quantum Gravity}, 23(16):S505.
+
+\bibitem[{Nuclear Weapon Archive}, 2023]{TsarBomba}
+{Nuclear Weapon Archive} (2023).
+\newblock Tsar bomba.
+\newblock Accessed: 2023-05-18.
+
+\bibitem[Offermans et~al., 2020]{offermans2020adaptive}
+Offermans, N., Peplinski, A., Marin, O., and Schlatter, P. (2020).
+\newblock Adaptive mesh refinement for steady flows in nek5000.
+\newblock {\em Computers \& Fluids}, 197:104352.
+
+\bibitem[Ongena et~al., 2016]{ongena2016magnetic}
+Ongena, J., Koch, R., Wolf, R., and Zohm, H. (2016).
+\newblock Magnetic-confinement fusion.
+\newblock {\em Nature Physics}, 12(5):398--410.
+
+\bibitem[Philipps, 2011]{philipps2011tungsten}
+Philipps, V. (2011).
+\newblock Tungsten as material for plasma-facing components in fusion devices.
+\newblock {\em Journal of nuclear materials}, 415(1):S2--S9.
+
+\bibitem[Pong et~al., 2012]{pong2012worldwide}
+Pong, I., Jewell, M., Bordini, B., Oberli, L.-R., Liu, S., Long, F., Boutboul,
+  T., Readman, P., Park, S.-H., Park, P.-Y., et~al. (2012).
+\newblock Worldwide benchmarking of iter internal tin nb3sn and nbti strands
+  test facilities.
+\newblock {\em IEEE transactions on applied superconductivity},
+  22(3):4802606--4802606.
+
+\bibitem[Post, 1987]{post1987magnetic}
+Post, R. (1987).
+\newblock The magnetic mirror approach to fusion.
+\newblock {\em Nuclear Fusion}, 27(10):1579.
+
+\bibitem[Pu and Xu, 2024]{pu2024unified}
+Pu, Z. and Xu, K. (2024).
+\newblock Unified gas-kinetic wave-particle method for multiscale flow
+  simulation of partially ionized plasma.
+\newblock {\em arXiv preprint arXiv:2407.07929}.
+
+\bibitem[Pustovitov et~al., 2017]{pustovitov2017computation}
+Pustovitov, V., Rubinacci, G., and Villone, F. (2017).
+\newblock On the computation of the disruption forces in tokamaks.
+\newblock {\em Nuclear Fusion}, 57(12):126038.
+
+\bibitem[Sambasivan and UdayKumar, 2009]{sambasivan2009ghost}
+Sambasivan, S.~K. and UdayKumar, H. (2009).
+\newblock Ghost fluid method for strong shock interactions part 2: immersed
+  solid boundaries.
+\newblock {\em AIAA journal}, 47(12):2923--2937.
+
+\bibitem[Schardin, 1966]{schardin1966stossrohre}
+Schardin, H. (1966).
+\newblock Stossrohre [shock tubes].
+\newblock {\em Springer Verlag}, pages 716--720.
+
+\bibitem[Shampine, 1982]{shampine1982implementation}
+Shampine, L.~F. (1982).
+\newblock Implementation of rosenbrock methods.
+\newblock {\em ACM Transactions on Mathematical Software (TOMS)}, 8(2):93--113.
+
+\bibitem[Shumlak, 2020]{shumlak2020z}
+Shumlak, U. (2020).
+\newblock Z-pinch fusion.
+\newblock {\em Journal of Applied Physics}, 127(20).
+
+\bibitem[Sivier et~al., 1992]{sivier1992vorticity}
+Sivier, S., Loth, E., Baum, J., and L{\"o}hner, R. (1992).
+\newblock Vorticity produced by shock wave diffraction.
+\newblock {\em Shock Waves}, 2:31--41.
+
+\bibitem[Spijker, 1996]{spijker1996stiffness}
+Spijker, M.~N. (1996).
+\newblock Stiffness in numerical initial-value problems.
+\newblock {\em Journal of Computational and Applied Mathematics},
+  72(2):393--406.
+
+\bibitem[Strauss, 2014]{strauss2014velocity}
+Strauss, H. (2014).
+\newblock Velocity boundary conditions at a tokamak resistive wall.
+\newblock {\em Physics of Plasmas}, 21(3).
+
+\bibitem[Takeda and Tokuda, 1991]{takeda1991computation}
+Takeda, T. and Tokuda, S. (1991).
+\newblock Computation of mhd equilibrium of tokamak plasma.
+\newblock {\em Journal of computational physics}, 93(1):1--107.
+
+\bibitem[Thohura and Rahman, 2010]{thohura2010comparison}
+Thohura, S. and Rahman, A. (2010).
+\newblock Comparison of numerical methods for solving initial value problems
+  for stiff differential equations.
+\newblock {\em Journal of Bangladesh Mathematical Society}, 30:122--132.
+
+\bibitem[Thohura and Rahman, 2013]{thohura2013numerical}
+Thohura, S. and Rahman, A. (2013).
+\newblock Numerical approach for solving stiff differential equations: A
+  comparative study.
+\newblock {\em J Sci Front Res Math Decision Sci}, 13:7--18.
+
+\bibitem[Todd et~al., 1979]{todd1979dependence}
+Todd, A., Manickam, J., Okabayashi, M., Chance, M., Grimm, R., Greene, J., and
+  Johnson, J. (1979).
+\newblock Dependence of ideal-mhd kink and ballooning modes on plasma shape and
+  profiles in tokamaks.
+\newblock {\em Nuclear Fusion}, 19(6):743.
+
+\bibitem[Toro, 2013]{toro2013riemann}
+Toro, E.~F. (2013).
+\newblock {\em Riemann solvers and numerical methods for fluid dynamics: a
+  practical introduction}.
+\newblock Springer Science \& Business Media.
+
+\bibitem[Toro, 2019]{toro2019hllc}
+Toro, E.~F. (2019).
+\newblock The hllc riemann solver.
+\newblock {\em Shock waves}, 29(8):1065--1082.
+
+\bibitem[Toro et~al., 1994]{toro1994restoration}
+Toro, E.~F., Spruce, M., and Speares, W. (1994).
+\newblock Restoration of the contact surface in the hll-riemann solver.
+\newblock {\em Shock waves}, 4:25--34.
+
+\bibitem[Tricco et~al., 2016]{tricco2016constrained}
+Tricco, T.~S., Price, D.~J., and Bate, M.~R. (2016).
+\newblock Constrained hyperbolic divergence cleaning in smoothed particle
+  magnetohydrodynamics with variable cleaning speeds.
+\newblock {\em Journal of Computational Physics}, 322:326--344.
+
+\bibitem[Twar{\'o}g et~al., 2011]{twarog2011test}
+Twar{\'o}g, D., Stankiewicz, R., and Drozdowicz, K. (2011).
+\newblock Test of the european transport solver in the frame of integrated
+  tokamak modelling.
+
+\bibitem[van Leer, 1979]{van1979towards}
+van Leer, B. (1979).
+\newblock Towards the ultimate conservative difference scheme. v. a
+  second-order sequel to godunov's method.
+\newblock {\em Journal of Computational Physics}, 32(1):101--136.
+
+\bibitem[Vides et~al., 2013]{vides2013divergence}
+Vides, J., Audit, E., Guillard, H., and Nkonga, B. (2013).
+\newblock Divergence-free mhd simulations with the heracles code.
+\newblock In {\em ESAIM: Proceedings}, volume~43, pages 180--194. EDP Sciences.
+
+\bibitem[Wan et~al., 2005]{wan2005progress}
+Wan, Y., Wu, S., Weng, P., Li, J., and Gao, D. (2005).
+\newblock Progress of the east project in china.
+
+\bibitem[Wesson and Campbell, 2011]{wesson2011tokamaks}
+Wesson, J. and Campbell, D.~J. (2011).
+\newblock {\em Tokamaks}, volume 149.
+\newblock Oxford university press.
+
+\bibitem[Wilson et~al., 1990]{wilson1990beryllium}
+Wilson, K., Causey, R., Hsu, W., Mills, B., Smith, M., and Whitley, J. (1990).
+\newblock Beryllium—a better tokamak plasma-facing material?
+\newblock {\em Journal of Vacuum Science \& Technology A: Vacuum, Surfaces, and
+  Films}, 8(3):1750--1759.
+
+\bibitem[Wright and Hawke, 2020]{wright2020resistive}
+Wright, A.~J. and Hawke, I. (2020).
+\newblock A resistive extension for ideal magnetohydrodynamics.
+\newblock {\em Monthly Notices of the Royal Astronomical Society},
+  491(4):5510--5523.
+
+\bibitem[Yanagisawa and Matsumura, 1991]{yanagisawa1991fixed}
+Yanagisawa, T. and Matsumura, A. (1991).
+\newblock The fixed boundary value problems for the equations of ideal
+  magneto-hydrodynamics with a perfectly conducting wall condition.
+\newblock {\em Communications in mathematical physics}, 136:119--140.
+
+\bibitem[Yolbarsop et~al., 2022]{yolbarsop2022analytic}
+Yolbarsop, A., Porcelli, F., Liu, W., and Fitzpatrick, R. (2022).
+\newblock Analytic theory of ideal-mhd vertical displacements in tokamak
+  plasmas.
+\newblock {\em Plasma Physics and Controlled Fusion}, 64(10):105002.
+
+\bibitem[Zanisi et~al., 2024]{zanisi2024efficient}
+Zanisi, L., Ho, A., Barr, J., Madula, T., Citrin, J., Pamela, S., Buchanan, J.,
+  Casson, F., Gopakumar, V., and Contributors, J. (2024).
+\newblock Efficient training sets for surrogate models of tokamak turbulence
+  with active deep ensembles.
+\newblock {\em Nuclear Fusion}, 64(3):036022.
+
+\end{thebibliography}

@@ -1,0 +1,81 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: thesis.aux
+Reallocating 'name_of_file' (item size: 1) to 26 items.
+A level-1 auxiliary file: Dedication/dedication.aux
+Reallocating 'name_of_file' (item size: 1) to 28 items.
+A level-1 auxiliary file: Declaration/declaration.aux
+Reallocating 'name_of_file' (item size: 1) to 36 items.
+A level-1 auxiliary file: Acknowledgement/acknowledgement.aux
+Reallocating 'name_of_file' (item size: 1) to 22 items.
+A level-1 auxiliary file: Abstract/abstract.aux
+Reallocating 'name_of_file' (item size: 1) to 22 items.
+A level-1 auxiliary file: Chapter1/chapter1.aux
+Reallocating 'name_of_file' (item size: 1) to 22 items.
+A level-1 auxiliary file: Chapter2/chapter2.aux
+Reallocating 'name_of_file' (item size: 1) to 22 items.
+A level-1 auxiliary file: Chapter3/chapter3.aux
+Reallocating 'name_of_file' (item size: 1) to 22 items.
+A level-1 auxiliary file: Chapter4/chapter4.aux
+Reallocating 'name_of_file' (item size: 1) to 22 items.
+A level-1 auxiliary file: Chapter5/chapter5.aux
+Reallocating 'name_of_file' (item size: 1) to 22 items.
+A level-1 auxiliary file: Chapter6/chapter6.aux
+Reallocating 'name_of_file' (item size: 1) to 22 items.
+A level-1 auxiliary file: Chapter7/chapter7.aux
+Reallocating 'name_of_file' (item size: 1) to 22 items.
+A level-1 auxiliary file: Chapter8/chapter8.aux
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+A level-1 auxiliary file: Chapter10/chapter10.aux
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+A level-1 auxiliary file: Chapter11/chapter11.aux
+Reallocating 'name_of_file' (item size: 1) to 8 items.
+The style file: apalike.bst
+Reallocating 'name_of_file' (item size: 1) to 22 items.
+Database file #1: References/references.bib
+Warning--empty journal in alamri2022very
+Warning--empty journal in haney1989variational
+Warning--empty journal in twarog2011test
+Warning--empty journal in wan2005progress
+You've used 89 entries,
+            1935 wiz_defined-function locations,
+            1009 strings with 19731 characters,
+and the built_in function-call counts, 36254 in all, are:
+= -- 3523
+> -- 1630
+< -- 63
++ -- 586
+- -- 556
+* -- 3199
+:= -- 6380
+add.period$ -- 267
+call.type$ -- 89
+change.case$ -- 709
+chr.to.int$ -- 89
+cite$ -- 93
+duplicate$ -- 1278
+empty$ -- 2413
+format.name$ -- 699
+if$ -- 6952
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 88
+newline$ -- 445
+num.names$ -- 267
+pop$ -- 563
+preamble$ -- 1
+purify$ -- 716
+quote$ -- 0
+skip$ -- 1004
+stack$ -- 0
+substring$ -- 2533
+swap$ -- 135
+text.length$ -- 9
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 522
+warning$ -- 4
+while$ -- 299
+width$ -- 0
+write$ -- 1141
+(There were 4 warnings)

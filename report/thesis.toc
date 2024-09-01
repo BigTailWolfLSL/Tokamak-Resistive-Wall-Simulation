@@ -1,0 +1,57 @@
+\thispagestyle {empty}
+\contentsline {chapter}{List of figures}{xiii}{chapter*.5}%
+\contentsline {chapter}{List of tables}{xv}{chapter*.6}%
+\contentsline {chapter}{\numberline {1}Introduction}{3}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Powerful Nuclear Fusion}{3}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Controlled Fusion}{3}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Computational Modelling on Tokamaks}{5}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Project Overview}{6}{section.1.4}%
+\contentsline {chapter}{\numberline {2}Theoretical Background}{9}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Ideal MHD Equations}{9}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Divergence Cleaning}{11}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Boundary Conditions}{14}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Hydrodynamic Effects}{14}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Magnetic Effects}{16}{subsection.2.3.2}%
+\contentsline {subsubsection}{Perfect Conducting Wall}{16}{section*.7}%
+\contentsline {subsubsection}{Insulating Wall}{16}{section*.8}%
+\contentsline {subsubsection}{Resistive Wall}{17}{section*.9}%
+\contentsline {subsubsection}{Actual Boundary on Tokamak}{17}{section*.10}%
+\contentsline {chapter}{\numberline {3}Numerical Methods}{19}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Numerical Scheme}{19}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}MUSCL-Hancock}{20}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}MHD-HLLC}{21}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Divergence Cleaning Technique}{22}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Technique for Rigid Body}{23}{section.3.3}%
+\contentsline {subsubsection}{Interpolation}{24}{section*.11}%
+\contentsline {subsubsection}{Handling Invalid Ghost Cells in Interpolation}{25}{section*.12}%
+\contentsline {subsubsection}{Applying Boundary Condition}{26}{section*.13}%
+\contentsline {chapter}{\numberline {4}Validation Test and Preliminary Results}{27}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Orszag-Tang Test}{27}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Shock Diffraction over Wedge}{28}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Shock Diffraction over Cylinder}{31}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Tests in Rotated Rigid Body}{31}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Rotated Sod Test}{31}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Rotated Brio-Wu Test}{36}{subsection.4.4.2}%
+\contentsline {chapter}{\numberline {5}Summary and Future Work}{39}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Resistive Wall Extension}{43}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Tokamak Wall Structure}{43}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Wall Modeling}{45}{section.6.2}%
+\contentsline {chapter}{\numberline {7}Theory}{47}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Resistive Wall Equation}{47}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Stiffness Problem from Diffusion}{48}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Evaluating Stiffness}{48}{subsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.2.2}Approaches for Stiffness}{49}{subsection.7.2.2}%
+\contentsline {section}{\numberline {7.3}Boundary Condition for Divergence Cleaning}{51}{section.7.3}%
+\contentsline {chapter}{\numberline {8}Resistive Wall Simulation}{53}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Validation Challenge}{53}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Cylindrical Equilibrium}{54}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Tokamak-shaped Application}{58}{section.8.3}%
+\contentsline {chapter}{\numberline {9}Boundary Condition Consistency}{61}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Superconducting Wall Condition}{61}{section.9.1}%
+\contentsline {subsection}{\numberline {9.1.1}London Equations}{61}{subsection.9.1.1}%
+\contentsline {subsection}{\numberline {9.1.2}Penetration on Superconductor Wall}{62}{subsection.9.1.2}%
+\contentsline {section}{\numberline {9.2}Extension on General Wall}{64}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Boundary Condition Recap}{64}{section.9.3}%
+\contentsline {section}{\numberline {9.4}Addressing the Inconsistency}{66}{section.9.4}%
+\contentsline {chapter}{\numberline {10}Summary}{67}{chapter.10}%
+\contentsline {chapter}{References}{69}{chapter*.26}%
