@@ -15,4 +15,4 @@ Included in "rigidbody_*"
 Some result graphics were uploeded in directory "result"
 
 #Thesis
-In thesis.pdf
+In thesis.pdf, reprot 1 & 2  were marked 77 and 80 respectively.
