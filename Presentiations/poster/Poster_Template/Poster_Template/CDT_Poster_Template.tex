@@ -1,0 +1,228 @@
+\pdfminorversion=4
+\documentclass[final]{beamer}
+\usetheme{Madrid}
+
+\usepackage[orientation=portrait,size=a2,scale=1.4,debug]{beamerposter}
+\usepackage[absolute,overlay]{textpos}
+\setlength{\TPHorizModule}{1cm}
+\setlength{\TPVertModule}{1cm}
+\usepackage{tikz}
+\usepackage[style=numeric,firstinits=true,sorting=none,doi=false,isbn=false,url=false,eprint=false,backend=bibtex]{biblatex}
+\bibliography{references.bib}
+\setbeamertemplate{bibliography item}[text]
+%\renewcommand*{\bibfont}{\tiny}
+\renewbibmacro{in:}{}
+\AtEveryBibitem{\clearfield{title}}
+\AtEveryBibitem{\clearfield{pages}}
+\setbeamertemplate{bibliography item}[text]
+\usepackage[labelfont={color={darkblue}},labelformat=simple]{caption}
+\usepackage{setspace}
+
+\setbeamertemplate{navigation symbols}{}  % no navigation on a poster
+\setbeamertemplate{caption}[numbered]
+
+\setbeamertemplate{itemize subitem}{\tiny\raise1.5pt\hbox{\donotcoloroutermaths$\blacktriangleright$}}
+\setbeamertemplate{itemize subsubitem}{\tiny\raise1.5pt\hbox{\donotcoloroutermaths$\blacktriangleright$}}
+\setbeamerfont*{itemize/enumerate body}{size=\footnotesize}
+\setbeamerfont*{itemize/enumerate subbody}{parent=itemize/enumerate body,size=\scriptsize}
+\setbeamerfont*{itemize/enumerate subsubbody}{parent=itemize/enumerate body,size=\scriptsize}
+
+\definecolor{lightblue}{rgb}{0.0,0.45,0.81}
+\definecolor{lighterblue}{rgb}{0.415,0.678,0.894}
+\definecolor{darkblue}{rgb}{0,0.243,0.447}
+\definecolor{vdarkblue}{rgb}{0,0.162,0.298}
+\setbeamercolor{frametitle}{bg=lightblue,fg=white}
+\setbeamerfont{normal text}{family=helvet}
+\setbeamerfont{local structure}{family=helvet}
+
+\setbeamercolor*{author in head/foot}{bg=darkblue}
+\setbeamercolor*{logo in head/foot}{bg=darkblue,fg=white}
+\setbeamercolor*{title in head/foot}{bg=lightblue,fg=vdarkblue}
+\setbeamercolor*{date in head/foot}{bg=darkblue,fg=white}
+\setbeamercolor{title}{bg=darkblue}
+\setbeamercolor{headline}{bg=lightblue,fg=white}
+\setbeamercolor{frametitle}{bg=darkblue}
+\setbeamercolor{under headline}{bg=lighterblue,fg=darkblue}
+\setbeamercolor{footline}{bg=darkblue}
+\setbeamercolor{block title}{bg=lighterblue,fg=vdarkblue}
+\setbeamercolor{lower separation line head}{bg=darkblue}
+
+\setbeamerfont*{title in head/foot}{size*={44}{44}}
+\setbeamerfont*{date in head/foot}{size*={28}{28}}
+\setbeamerfont*{bibliography item}{size*={24}{24}}
+\setbeamerfont*{bibliography entry journal}{size*={36}{36}}
+\setbeamerfont*{footline}{size*={44}{44}}
+
+\setbeamersize{text margin left=44mm}
+\setbeamersize{text margin right=44mm} 
+
+\setbeamertemplate{headline}
+{
+  \leavevmode%
+  \vskip0.015\paperwidth
+  \hskip0.015\paperwidth \hbox{%
+  \begin{beamercolorbox}[wd=.285\paperwidth,ht=2.5cm,center,dp=1ex]{logo in
+    head/foot}%
+  \usebeamerfont{logo in head/foot}\includegraphics[width=.25\paperwidth]{./UClogo_bg.png}%
+\end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.685\paperwidth,dp=1ex,right,ht=2.5cm]{date in head/foot}%
+    \usebeamerfont{date in head/foot}MPhil in Scientific
+    Computing\hspace{1cm}\vspace{0.05cm}
+\hskip0.015\paperwidth
+\end{beamercolorbox}%
+}%
+  \vskip0pt%
+\hbox{%
+\hskip0.015\paperwidth
+  \begin{beamercolorbox}[wd=0.97\paperwidth,dp=1ex,ht=2.5cm,center]{under headline}%
+    \usebeamerfont{title in head/foot}%
+    \begin{centering}\inserttitle\end{centering}\vspace{0.05cm}%
+  \end{beamercolorbox}%
+\hskip0.015\paperwidth
+}%
+%  \vskip0pt%
+\hbox{%
+\hskip0.015\paperwidth
+  \begin{beamercolorbox}[wd=0.97\paperwidth,dp=0.5ex,center]{lower separation line head}%
+    \rule{0pt}{2pt}%
+  \end{beamercolorbox}%
+\hskip0.015\paperwidth
+}%
+%  \vskip0pt%
+}
+
+
+\setbeamertemplate{block begin}{
+
+  \begin{beamercolorbox}[ht = 2.0cm, sep=0.25cm,leftskip=0.5cm]%,, colsep*=.75ex]
+  {block title}%
+  \usebeamerfont*{block title}\insertblocktitle \vphantom{Pp}
+  \end{beamercolorbox}%
+  {\ifbeamercolorempty[bg]{block body}{}{\nointerlineskip\vskip-0.5pt}}%
+  \usebeamerfont{block body}%
+  \begin{beamercolorbox}[sep=0.75cm]%[colsep*=.75ex,vmode]
+  {block body}%
+    %\ifbeamercolorempty[bg]{block body}{\vskip-.25ex}{\vskip-.75ex}\vbox{}%
+  }
+  \setbeamertemplate{block end}{
+  \end{beamercolorbox}
+  \vspace{0.6cm}
+}
+
+
+\setbeamertemplate{frametitle}
+{
+  \leavevmode%
+  \begin{beamercolorbox}[wd=\paperwidth,ht=1cm]{frametitle}
+   \hspace{1em}\insertframetitle\vspace{0.35cm}
+   \end{beamercolorbox}%
+   %\vskip-0.4cm%
+  \begin{beamercolorbox}[wd=\paperwidth,ht=1ex]{under headline}%
+    \end{beamercolorbox}%
+}
+
+%%% USER MODIFIABLE PARTS START BELOW %%%
+
+\setbeamertemplate{footline}{  
+  \leavevmode%
+  \hbox{%
+\hskip0.015\paperwidth
+  \begin{beamercolorbox}[wd=.235\paperwidth,dp=1ex,right,ht=2.5cm]{date in head/foot}%
+    \usebeamerfont{date in head/foot}\centering\insertauthor\vspace{0.65cm}
+\end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.225\paperwidth,ht=2.5cm,center,dp=1ex]{logo in
+    head/foot}%
+  \usebeamerfont{logo in head/foot}CDT in CMMS\vspace{0.5cm}%
+\end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.225\paperwidth,ht=2.5cm,center,dp=1ex]{logo in
+    head/foot}%
+%% EDIT YOUR SPONSOR LOGO BELOW %%
+  \usebeamerfont{logo in
+    head/foot}\includegraphics[height=2cm]{./sponsor.png}%
+\vspace{0.1cm}
+\end{beamercolorbox}%
+\begin{beamercolorbox}[wd=0.285\paperwidth,ht=2.5cm,dp=1ex,center]{date
+    in head/foot}%
+%% EDIT YOUR SUPERVISOR'S NAME BELOW %%
+  \usebeamerfont{date in head/foot}{Supervisor: My Supervisor's
+  Name}\vspace{0.3cm}
+  \end{beamercolorbox}}%
+\hskip0.015\paperwidth
+  \vskip0.015\paperwidth%
+  }
+
+% EDIT FONT SIZE FOR BLOCKS HERE
+
+\setbeamerfont*{caption name}{size=\fontsize{24pt}{28pt}}
+\setbeamerfont*{caption}{size=\fontsize{24pt}{28pt}}
+\setbeamerfont*{block body}{size=\fontsize{24pt}{28pt}}
+\setbeamerfont*{block title}{size=\fontsize{36pt}{40pt}}
+
+%% EDIT TITLE AND AUTHOR
+
+\title{My MPhil Project Title}
+\author{My Name}
+
+\begin{document}
+\begin{frame}{} 
+
+\begin{textblock}{19.5}(1,7.5)
+\begin{block}{Outline}
+Here I describe an overview of what my project was about.
+\end{block}
+
+\begin{block}{Background}
+Here I describe what problem I am trying to solve and why.
+\end{block}
+
+\begin{block}{Formulation}
+Some equations to solve:
+\begin{equation*}
+a^n + b^n = c^n\;n \geqslant 3
+\end{equation*}
+For more fancy equations, see \cite{TeXBook}.
+\end{block}
+
+
+\end{textblock}
+
+% Second column
+
+\begin{textblock}{19.5}(21.5,7.5)
+\begin{block}{My results}
+The following graph shows my coffee intake over the year:\\
+\begin{figure}
+\begin{minipage}{0.95\linewidth}
+\includegraphics[width = \linewidth]{ENOTest3b.png}
+\end{minipage}\\
+\begin{minipage}{0.95\linewidth}
+\caption{x-axis is time in months, y-axis is espressos per hour}
+\label{fig:CoffeeFig}
+\end{minipage}
+\end{figure}
+\begin{itemize}
+\item Bullet point test
+\begin{itemize}
+\item Sub-point
+\begin{itemize}
+\item Sub-sub-point
+\end{itemize}
+\end{itemize}
+\item Main point
+\end{itemize}
+\end{block}
+
+\begin{block}{References and Acknowledgements}
+\begin{minipage}{0.9\linewidth}
+     {     \printbibliography   % i.e. the references.bib file
+     } 
+\end{minipage}
+\vspace{2ex}
+Thanks to my sponsor, my supervisor, and to other students for
+fruitful discussions and caffeine.
+\end{block}
+
+\end{textblock}
+
+\end{frame}
+\end{document}

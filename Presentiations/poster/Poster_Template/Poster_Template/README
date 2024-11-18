@@ -1,0 +1,32 @@
+In order to compile this LaTeX document you should run the following:
+
+make MPhil_Poster_Template.pdf
+
+If latexmk is not installed on your machine, use the following instead:
+
+pdflatex MPhil_Poster_Template.tex
+bibtex MPhil_Poster_Template
+pdflatex MPhil_Poster_Template.tex
+pdflatex MPhil_Poster_Template.tex
+
+in order to get all the cross-references correct, including those
+from your BiBTeX file references.bib
+
+The above template will produce a poster suitable for printing onto A2 paper.
+
+If you need to produce an A1 poster, you should use
+MPhil_Poster_Template_A1.tex instead. This gives a three column version of the above.
+
+Students who are part of the Materials CDT should use the .tex files beginning CDT_ instead.
+
+Caveats:
+The behaviour of the beamer-latex package seems to have changed between versions
+of TexLive. The current templates give reasonable results in the latest version
+of TeXLive, but may give odd font sizes in older versions.
+
+I have tested these LaTeX files with TeXLive 2015, 2017, and 2019 and results look reasonable in all three.
+Some tweaking may be required for different versions of TeXLive, or for typesetting
+requirements not covered by the example.
+
+There is also a PowerPoint template for A2 which should match the MPhil LaTeX template.
+It should be easy to adapt this to a CDT template.

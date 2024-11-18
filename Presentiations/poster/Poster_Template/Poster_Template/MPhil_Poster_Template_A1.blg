@@ -1,0 +1,73 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: MPhil_Poster_Template_A1.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: biblatex.bst
+Reallocating 'name_of_file' (item size: 1) to 29 items.
+Reallocating 'name_of_file' (item size: 1) to 11 items.
+Reallocating 'glb_str_end' (item size: 4) to 20 items.
+Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
+Reallocating 'global_strs' (item size: 1) to 4000000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Database file #1: MPhil_Poster_Template_A1-blx.bib
+Database file #2: references.bib
+Repeated entry---line 17 of file references.bib
+ : @control{biblatex-control
+ :                          ,
+I'm skipping whatever remains of this entry
+Biblatex version: 3.20
+Reallocating 'wiz_functions' (item size: 4) to 9000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+You've used 6 entries,
+            6402 wiz_defined-function locations,
+            1238 strings with 9868 characters,
+and the built_in function-call counts, 38653 in all, are:
+= -- 3120
+> -- 570
+< -- 147
++ -- 1213
+- -- 186
+* -- 2410
+:= -- 4579
+add.period$ -- 0
+call.type$ -- 6
+change.case$ -- 96
+chr.to.int$ -- 42
+cite$ -- 10
+duplicate$ -- 4286
+empty$ -- 3281
+format.name$ -- 320
+if$ -- 7738
+int.to.chr$ -- 0
+int.to.str$ -- 14
+missing$ -- 0
+newline$ -- 180
+num.names$ -- 259
+pop$ -- 1867
+preamble$ -- 1
+purify$ -- 128
+quote$ -- 0
+skip$ -- 1012
+stack$ -- 0
+substring$ -- 5351
+swap$ -- 738
+text.length$ -- 123
+text.prefix$ -- 1
+top$ -- 1
+type$ -- 187
+warning$ -- 0
+while$ -- 612
+width$ -- 0
+write$ -- 175
+(There was 1 error message)

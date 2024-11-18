@@ -1,0 +1,89 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{none/global//global/global/global}
+  \entry{vides2013divergence}{inproceedings}{}{}
+    \name{author}{4}{}{%
+      {{hash=VJ}{%
+         family={Vides},
+         familyi={V\bibinitperiod},
+         given={Jeaniffer},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=AE}{%
+         family={Audit},
+         familyi={A\bibinitperiod},
+         given={Edouard},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=GH}{%
+         family={Guillard},
+         familyi={G\bibinitperiod},
+         given={Herv{\'e}},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=NB}{%
+         family={Nkonga},
+         familyi={N\bibinitperiod},
+         given={Boniface},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {EDP Sciences}%
+    }
+    \strng{namehash}{VJ+1}
+    \strng{fullhash}{VJAEGHNB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{ESAIM: Proceedings}
+    \field{pages}{180\bibrangedash 194}
+    \field{title}{Divergence-free MHD simulations with the HERACLES code}
+    \field{volume}{43}
+    \field{year}{2013}
+  \endentry
+
+  \entry{sambasivan2009ghost}{article}{}{}
+    \name{author}{2}{}{%
+      {{hash=SSK}{%
+         family={Sambasivan},
+         familyi={S\bibinitperiod},
+         given={Shiv\bibnamedelima Kumar},
+         giveni={S\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=UH}{%
+         family={UdayKumar},
+         familyi={U\bibinitperiod},
+         given={HS},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SSKUH1}
+    \strng{fullhash}{SSKUH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{12}
+    \field{pages}{2923\bibrangedash 2937}
+    \field{title}{Ghost fluid method for strong shock interactions part 2:
+  immersed solid boundaries}
+    \field{volume}{47}
+    \field{journaltitle}{AIAA journal}
+    \field{year}{2009}
+  \endentry
+\enddatalist
+\endinput
